@@ -1,0 +1,5 @@
+metric,value,note
+raw_corr_SW_stock_total_assets,0.8399962617441448,Scale diagnostic; motivates alternative transforms.
+negative_SW_delta_private_rows,4.0,Flow is a signed change in recognized gross software cost.
+private_panel_rows,286.0,26 banks x 11 observed years.
+private_panel_banks,26.0,Bank clusters.

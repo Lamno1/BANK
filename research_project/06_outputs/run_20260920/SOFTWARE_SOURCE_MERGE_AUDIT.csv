@@ -1,0 +1,3 @@
+variable,old_nonmissing,new_nonmissing,overlap_nonmissing,overlap_mismatches_gt_1e-9,max_abs_difference
+SW_stock,290,318,290,0,0.0
+SW_delta,290,318,290,0,1.7763568394002505e-15

@@ -1,0 +1,68 @@
+[NETWORK] sheet="số phòng chi nhánh"; valid bank-years=369; banks=31; years=2014-2025
+[NETWORK MERGE] private panel N=286; matched=284 (99.3%); missing=2
+[WINSOR] locked thresholds for 15 variables on full private panel.
+
+==============================================================================================================
+H1 — FRANCHISE CAPABILITY: CASA -> CI
+==============================================================================================================
+H1 CASA: coef=+0.001609, p=0.00041***; N=273, G=26
+
+==============================================================================================================
+H2 — SOFTWARE NET CHANGE: current-period accumulation + temporal shift
+==============================================================================================================
+H2 baseline: coef=+0.000394, p=0.21375
+H2 SW_delta x Post2020: coef=-0.002284, p=0.00686***; joint Wald p=0.02041
+
+==============================================================================================================
+H3 — ACCUMULATED DIGITAL CAPITAL: Software Stock -> CI
+==============================================================================================================
+H3 SW_stock: coef=-0.000609, p=0.25473; N=271, G=26
+
+==============================================================================================================
+H4 — STRUCTURAL RECONFIGURATION
+==============================================================================================================
+Software Stock: H4R-A delta=-0.000980, p=0.01390** | H4R-COMP AssetShare beta=+0.018019, p=0.00522*** | Staff p=0.00326
+Software Stock: H4a ln(network) coef=-0.074538, p=0.00581*** | intensity p=0.51882
+Software net change: H4R-A delta=+0.000035, p=0.91437 | H4R-COMP AssetShare beta=+0.009539, p=0.00731*** | Staff p=0.32672
+Software net change: H4a ln(network) coef=-0.055280, p=0.00222*** | intensity p=0.98537
+
+==============================================================================================================
+H5 — SCALE BOUNDARY CONDITION: Software Stock x Size
+==============================================================================================================
+Software Stock: MAIN DxBIG coef=-0.008353, p=0.02543** | slope small p=0.03439, large p=0.49606
+   robustness p: fixed-mean=0.66657; fixed-2015=0.20702; continuous=0.00555
+Software net change: MAIN DxBIG coef=-0.002578, p=0.02720** | slope small p=0.01215, large p=0.19577
+   robustness p: fixed-mean=0.06283; fixed-2015=0.01500; continuous=0.00302
+CASA franchise comparator: MAIN DxBIG coef=-0.001142, p=0.13693 | slope small p=0.00038, large p=0.05425
+   robustness p: fixed-mean=0.48671; fixed-2015=0.22736; continuous=0.08393
+
+==============================================================================================================
+SAVED RESULT TABLE: D:\BANK\research_project\06_outputs\run_20260920\H1_H5_results_harmonized.csv
+==============================================================================================================
+hypothesis                        test                    role                   construct                      outcome      coef    p_CR2   N  G
+        H1               CASA baseline                 PRIMARY        Franchise capability                           CI  0.001609 0.000406 273 26
+        H2         Net-change baseline                 PRIMARY         Software net change                           CI  0.000394 0.213746 271 26
+        H2       Post-2020 interaction        PRIMARY-TEMPORAL         Software net change                           CI -0.002284 0.006858 271 26
+        H3              Stock baseline                 PRIMARY Accumulated digital capital                           CI -0.000609 0.254731 271 26
+        H4     H4R-A absolute contrast                 PRIMARY              Software Stock   NonAsset/TA - AssetCost/TA -0.000980 0.013899 270 26
+        H4       H4R-COMP direct share                 PRIMARY              Software Stock               AssetCost/OPEX  0.018019 0.005218 270 26
+        H4             Staff component       COMPONENT-PRIMARY              Software Stock                 StaffCost/TA -0.000942 0.003264 270 26
+       H4a    Physical network primary                 PRIMARY              Software Stock ln(harmonized network count) -0.074538 0.005812 271 26
+       H4a  Physical network intensity       SECONDARY-PRIMARY              Software Stock    network count per 1e14 TA  2.840128 0.518819 271 26
+        H4     H4R-A absolute contrast           SUPPLEMENTARY         Software net change   NonAsset/TA - AssetCost/TA  0.000035 0.914373 270 26
+        H4       H4R-COMP direct share           SUPPLEMENTARY         Software net change               AssetCost/OPEX  0.009539 0.007305 270 26
+        H4             Staff component COMPONENT-SUPPLEMENTARY         Software net change                 StaffCost/TA -0.000242 0.326716 270 26
+       H4a    Physical network primary           SUPPLEMENTARY         Software net change ln(harmonized network count) -0.055280 0.002219 271 26
+       H4a  Physical network intensity SECONDARY-SUPPLEMENTARY         Software net change    network count per 1e14 TA  0.057702 0.985372 271 26
+        H5   BIG bank-year interaction                 PRIMARY              Software Stock                           CI -0.008353 0.025427 271 26
+        H5         BIG fixed bank mean              ROBUSTNESS              Software Stock                           CI -0.001906 0.666574 271 26
+        H5              BIG fixed 2015              ROBUSTNESS              Software Stock                           CI -0.002879 0.207016 271 26
+        H5 Continuous size interaction              ROBUSTNESS              Software Stock                           CI -0.002902 0.005554 271 26
+        H5   BIG bank-year interaction           SUPPLEMENTARY         Software net change                           CI -0.002578 0.027200 271 26
+        H5         BIG fixed bank mean              ROBUSTNESS         Software net change                           CI -0.003940 0.062833 271 26
+        H5              BIG fixed 2015              ROBUSTNESS         Software net change                           CI -0.005500 0.015001 271 26
+        H5 Continuous size interaction              ROBUSTNESS         Software net change                           CI -0.001641 0.003017 271 26
+        H5   BIG bank-year interaction              COMPARATOR   CASA franchise comparator                           CI -0.001142 0.136925 273 26
+        H5         BIG fixed bank mean              ROBUSTNESS   CASA franchise comparator                           CI -0.000507 0.486709 273 26
+        H5              BIG fixed 2015              ROBUSTNESS   CASA franchise comparator                           CI -0.000980 0.227361 273 26
+        H5 Continuous size interaction              ROBUSTNESS   CASA franchise comparator                           CI -0.000448 0.083933 273 26

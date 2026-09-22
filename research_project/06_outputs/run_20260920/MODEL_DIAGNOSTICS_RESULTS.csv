@@ -1,0 +1,46 @@
+section,predictor,test,statistic,p_value,N,G,note
+serial_correlation,CASA,Wooldridge-style FD H0 rho=-0.5,-0.28737025590048226,0.07364338620694673,217,26,se=0.113877
+serial_correlation,CASA,FE residual AR1 H0 rho=0,0.45156020799501584,0.0006574694195906813,244,26,se=0.116094
+serial_correlation,SW_delta,Wooldridge-style FD H0 rho=-0.5,-0.31243299460955165,0.1506493282262007,215,26,se=0.126503
+serial_correlation,SW_delta,FE residual AR1 H0 rho=0,0.45227564563912964,0.0011498255580602171,242,26,se=0.123232
+serial_correlation,SW_stock,Wooldridge-style FD H0 rho=-0.5,-0.3304015468345928,0.16774642071961604,215,26,se=0.119374
+serial_correlation,SW_stock,FE residual AR1 H0 rho=0,0.44247453634250944,0.0013542713505008779,242,26,se=0.122726
+multicollinearity,CASA,native VIF z_X,1.165546293387645,,273,26,two-way-FE residualized
+multicollinearity,CASA,native VIF z_Branch,1.2853452339560008,,273,26,two-way-FE residualized
+multicollinearity,CASA,native VIF z_lnTA,1.2594023224840445,,273,26,two-way-FE residualized
+multicollinearity,CASA,native VIF z_eq_ratio,1.478176518026896,,273,26,two-way-FE residualized
+multicollinearity,CASA,native VIF z_loan_ratio,1.5936390546932055,,273,26,two-way-FE residualized
+multicollinearity,CASA,native VIF z_NPL_ratio,1.0357855692551083,,273,26,two-way-FE residualized
+multicollinearity,CASA,native VIF z_dep_depth,1.571774675290818,,273,26,two-way-FE residualized
+multicollinearity,SW_delta,native VIF z_X,1.1483919337152153,,271,26,two-way-FE residualized
+multicollinearity,SW_delta,native VIF z_Branch,1.2711711803091317,,271,26,two-way-FE residualized
+multicollinearity,SW_delta,native VIF z_lnTA,1.3455989286200098,,271,26,two-way-FE residualized
+multicollinearity,SW_delta,native VIF z_eq_ratio,1.3398028918485354,,271,26,two-way-FE residualized
+multicollinearity,SW_delta,native VIF z_loan_ratio,1.5188202752612259,,271,26,two-way-FE residualized
+multicollinearity,SW_delta,native VIF z_NPL_ratio,1.0429306245628014,,271,26,two-way-FE residualized
+multicollinearity,SW_delta,native VIF z_dep_depth,1.538009784045542,,271,26,two-way-FE residualized
+multicollinearity,SW_stock,native VIF z_X,1.2452595929911199,,271,26,two-way-FE residualized
+multicollinearity,SW_stock,native VIF z_Branch,1.278441147603443,,271,26,two-way-FE residualized
+multicollinearity,SW_stock,native VIF z_lnTA,1.362177788000453,,271,26,two-way-FE residualized
+multicollinearity,SW_stock,native VIF z_eq_ratio,1.34605590519134,,271,26,two-way-FE residualized
+multicollinearity,SW_stock,native VIF z_loan_ratio,1.5515455479960998,,271,26,two-way-FE residualized
+multicollinearity,SW_stock,native VIF z_NPL_ratio,1.0424333846750937,,271,26,two-way-FE residualized
+multicollinearity,SW_stock,native VIF z_dep_depth,1.5644246682096958,,271,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_CASA,1.2633226226676737,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_SW_delta,3.083383445521289,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_SW_stock,3.3735855083476984,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_Branch,1.336729316411528,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_lnTA,1.3756183275906653,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_eq_ratio,1.5021788049619031,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_loan_ratio,1.6809995698506064,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_NPL_ratio,1.0459124840510918,,268,26,two-way-FE residualized
+multicollinearity,joint3,joint VIF z_dep_depth,1.6405640543300268,,268,26,two-way-FE residualized
+multicollinearity,joint3,within-FE corr z_CASA vs z_SW_delta,0.3212639558324152,,268,26,
+multicollinearity,joint3,within-FE corr z_CASA vs z_SW_stock,0.330314227260171,,268,26,
+multicollinearity,joint3,within-FE corr z_SW_delta vs z_SW_stock,0.8150666810538253,,268,26,
+endogeneity,SW_delta,first-stage lag1 relevance,0.7298892417786151,3.184524381417228e-06,244,26,t=5.9609
+endogeneity,SW_delta,control-function residual inclusion,0.0009234809098560273,0.00014139379630654516,244,26,t=4.4855
+distributed_lag,SW_delta,z_SW_delta,0.001124991562466537,0.006243413222044171,217,26,
+distributed_lag,SW_delta,z_SW_lag1,-0.0003118193468450751,0.21999126637483601,217,26,
+distributed_lag,SW_delta,z_SW_lag2,-0.0005899009113830968,0.061805573972296,217,26,
+distributed_lag,SW_delta,joint lag1=lag2=0,12.113136965679953,0.00020979158161483076,217,26,"df=(2,25)"

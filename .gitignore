@@ -1,0 +1,59 @@
+# This repo is scoped to DATA, CODE, and RESULTS only.
+# Everything else (manuscript drafts, Overleaf/journal-submission files,
+# literature PDFs, research-strategy/audit notes, local tool artifacts,
+# LibreOffice installers/profiles, root-level duplicate raw files) is
+# intentionally excluded -- do not remove the blanket root ignore below
+# to "fix" a missing file; add an explicit allow-list entry instead.
+
+# --- Ignore everything at the root by default ---
+/*
+
+# --- Allow the project folder itself, then re-ignore its contents ---
+!/research_project
+/research_project/*
+
+# --- Allow-list: only these research_project subfolders are tracked ---
+!/research_project/01_data
+!/research_project/02_code
+!/research_project/06_outputs
+!/research_project/10_era
+
+# --- Allow-list: repo housekeeping files at root ---
+!/.gitignore
+!/README.md
+
+# =====================================================================
+# Within the allow-listed folders, still strip regenerable/local junk
+# =====================================================================
+
+# --- Rendering tool caches ---
+_lo_profile*/
+lo_profile*/
+**/lo_profile*/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Ad-hoc QA screenshots and scratch text dumps ---
+qa_page_*.png
+qa[0-9]*_page_*.png
+final_qa_p*.png
+full_v*_dump*.txt
+v*_text_only.txt
+v*_v*_diff.txt
+
+# --- Office lock/temp files ---
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Editor/IDE ---
+.vscode/
+.idea/

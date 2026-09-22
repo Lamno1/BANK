@@ -1,0 +1,4 @@
+[NETWORK] sheet="số phòng chi nhánh"; valid bank-years=369; banks=31; years=2014-2025
+[NETWORK MERGE] private panel N=286; matched=284 (99.3%); missing=2
+Saved D:\BANK\research_project\06_outputs\run_20260920\REDESIGNED_MODEL_RESULTS.csv
+Saved D:\BANK\research_project\06_outputs\run_20260920\REDESIGNED_MODEL_DIAGNOSTICS.csv

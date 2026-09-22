@@ -1,0 +1,80 @@
+[NETWORK] sheet="số phòng chi nhánh"; valid bank-years=369; banks=31; years=2014-2025
+[NETWORK MERGE] private panel N=286; matched=284 (99.3%); missing=2
+[PRIVATE PANEL] N=286, G=26, years=2015-2025
+
+====================================================================================================
+A. SERIAL CORRELATION DIAGNOSTICS
+====================================================================================================
+CASA                     Wooldridge-style rho_FD=-0.2874, H0 rho=-0.5, p=0.07364, N=217, G=26
+                         FE residual AR(1) rho=+0.4516, H0 rho=0, p=0.00066, N=244, G=26
+Software net change      Wooldridge-style rho_FD=-0.3124, H0 rho=-0.5, p=0.15065, N=215, G=26
+                         FE residual AR(1) rho=+0.4523, H0 rho=0, p=0.00115, N=242, G=26
+Software stock           Wooldridge-style rho_FD=-0.3304, H0 rho=-0.5, p=0.16775, N=215, G=26
+                         FE residual AR(1) rho=+0.4425, H0 rho=0, p=0.00135, N=242, G=26
+
+====================================================================================================
+B. MULTICOLLINEARITY (TWO-WAY-FE RESIDUALIZED VIF)
+====================================================================================================
+
+CASA native sample: N=273, G=26
+    variable   VIF
+         z_X 1.166
+    z_Branch 1.285
+      z_lnTA 1.259
+  z_eq_ratio 1.478
+z_loan_ratio 1.594
+ z_NPL_ratio 1.036
+ z_dep_depth 1.572
+
+Software net change native sample: N=271, G=26
+    variable   VIF
+         z_X 1.148
+    z_Branch 1.271
+      z_lnTA 1.346
+  z_eq_ratio 1.340
+z_loan_ratio 1.519
+ z_NPL_ratio 1.043
+ z_dep_depth 1.538
+
+Software stock native sample: N=271, G=26
+    variable   VIF
+         z_X 1.245
+    z_Branch 1.278
+      z_lnTA 1.362
+  z_eq_ratio 1.346
+z_loan_ratio 1.552
+ z_NPL_ratio 1.042
+ z_dep_depth 1.564
+
+JOINT common sample: N=268, G=26
+Within-FE focal correlation:
+            z_CASA  z_SW_delta  z_SW_stock
+z_CASA       1.000       0.321       0.330
+z_SW_delta   0.321       1.000       0.815
+z_SW_stock   0.330       0.815       1.000
+
+Within-FE full VIF:
+    variable   VIF
+      z_CASA 1.263
+  z_SW_delta 3.083
+  z_SW_stock 3.374
+    z_Branch 1.337
+      z_lnTA 1.376
+  z_eq_ratio 1.502
+z_loan_ratio 1.681
+ z_NPL_ratio 1.046
+ z_dep_depth 1.641
+
+====================================================================================================
+C. ENDOGENEITY / CONTROL-FUNCTION DIAGNOSTIC FOR SW_delta
+====================================================================================================
+First-stage lag1: coef=+0.729889, CR2 t=5.961, p=0.00000318, N=244, G=26
+Residual inclusion v_hat: coef=+0.000923, CR2 t=4.486, p=0.00014139, N=244, G=26
+
+D. DISTRIBUTED LAG / EXCLUSION-RESTRICTION WARNING
+z_SW_delta     coef=+0.001125, p=0.006243
+z_SW_lag1      coef=-0.000312, p=0.219991
+z_SW_lag2      coef=-0.000590, p=0.061806
+Joint H0 lag1=lag2=0: F=12.1131, p=0.00020979, df=(2,25)
+
+Saved D:\BANK\research_project\06_outputs\run_20260920\MODEL_DIAGNOSTICS_RESULTS.csv

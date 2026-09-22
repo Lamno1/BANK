@@ -1,0 +1,7 @@
+specification,years_used,banks_with_residuals,mean_pairwise_residual_corr,median_pairwise_residual_corr,note
+PRIMARY_stock_CI_without_network,11,26,-0.026978849079473757,-0.06059299222645292,Descriptive residual dependence diagnostic; year FE do not prove cross-sectional independence.
+PRIMARY_stock_AssetCostShare_without_network,11,26,-0.017789585877013913,-0.04793313175623798,Descriptive residual dependence diagnostic; year FE do not prove cross-sectional independence.
+SECONDARY_delta_CI_without_network,11,26,-0.02792738180709631,-0.041408779644572714,Descriptive residual dependence diagnostic; year FE do not prove cross-sectional independence.
+SECONDARY_stock_CI_with_network,11,26,-0.026516768444558875,-0.049617149763185146,Descriptive residual dependence diagnostic; year FE do not prove cross-sectional independence.
+SECONDARY_stock_AssetCostShare_with_network,11,26,-0.016823891800311096,-0.016788346503108623,Descriptive residual dependence diagnostic; year FE do not prove cross-sectional independence.
+SECONDARY_delta_AssetCostShare_without_network,11,26,-0.020489746013820753,-0.041072197065442906,Descriptive residual dependence diagnostic; year FE do not prove cross-sectional independence.

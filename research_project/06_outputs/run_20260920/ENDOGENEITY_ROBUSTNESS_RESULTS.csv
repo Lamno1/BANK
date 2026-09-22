@@ -1,0 +1,106 @@
+method,predictor,label,role,outcome,test,coef,se_CR2,statistic,p_value,N,G,note
+lead_falsification,CASA,CASA,benchmark,CI,current X,0.0006286337453167635,0.00039296472693729415,1.5997205403554586,0.12222359780112622,217,26,cost_intensity
+lead_falsification,CASA,CASA,benchmark,CI,lead +1,0.0005708422840380377,0.00043043931527250056,1.326185280442265,0.19676768504362274,217,26,cost_intensity
+lead_falsification,CASA,CASA,benchmark,CI,lead +2,0.0013790477829289942,0.0005634868564594472,2.4473468495679827,0.02175907467769864,217,26,cost_intensity
+lead_falsification,CASA,CASA,benchmark,CI,joint leads +1=+2=0,,,2.996202491332615,0.06816463731826476,217,26,"cost_intensity; df=(2,25)"
+lead_falsification,CASA,CASA,benchmark,NonAssetMinusAsset,current X,0.0002578965365370266,0.00044929385664385315,0.5740041461137901,0.5710937910399958,216,26,H4_absolute_contrast
+lead_falsification,CASA,CASA,benchmark,NonAssetMinusAsset,lead +1,0.0005365078142706673,0.0003448433826091791,1.5558013907974768,0.1323251718079665,216,26,H4_absolute_contrast
+lead_falsification,CASA,CASA,benchmark,NonAssetMinusAsset,lead +2,0.0012381558500717909,0.0005764645002863595,2.1478440553698195,0.04160940115480707,216,26,H4_absolute_contrast
+lead_falsification,CASA,CASA,benchmark,NonAssetMinusAsset,joint leads +1=+2=0,,,2.604386632551827,0.0938828984123742,216,26,"H4_absolute_contrast; df=(2,25)"
+lead_falsification,CASA,CASA,benchmark,AssetCostShare,current X,0.004773330197774918,0.007474382233505973,0.6386253804865843,0.5288744215765848,216,26,H4_composition
+lead_falsification,CASA,CASA,benchmark,AssetCostShare,lead +1,-0.008157809676650973,0.007597776345242992,-1.0737101628108099,0.2932074262949715,216,26,H4_composition
+lead_falsification,CASA,CASA,benchmark,AssetCostShare,lead +2,-0.013202048680215864,0.010710462189166476,-1.2326310897740345,0.22917986316729239,216,26,H4_composition
+lead_falsification,CASA,CASA,benchmark,AssetCostShare,joint leads +1=+2=0,,,0.8003258276492056,0.4603590218032805,216,26,"H4_composition; df=(2,25)"
+lead_falsification,CASA,CASA,benchmark,Staff/TA,current X,7.334234068546671e-06,0.00030585321897990726,0.023979587636867365,0.9810592706271488,216,26,H4_staff
+lead_falsification,CASA,CASA,benchmark,Staff/TA,lead +1,0.00020925304780767574,0.00023666122964215183,0.884188120395051,0.38501935347466154,216,26,H4_staff
+lead_falsification,CASA,CASA,benchmark,Staff/TA,lead +2,0.0007594443687499969,0.00047909872871418574,1.5851521267614466,0.12550119308437957,216,26,H4_staff
+lead_falsification,CASA,CASA,benchmark,Staff/TA,joint leads +1=+2=0,,,1.3076918323816478,0.28831125189140305,216,26,"H4_staff; df=(2,25)"
+lead_falsification,CASA,CASA,benchmark,ln(Network),current X,-0.05164879497583417,0.054607680890391454,-0.9458155727122644,0.353295263676219,217,26,H4a_network
+lead_falsification,CASA,CASA,benchmark,ln(Network),lead +1,-0.01029977609210116,0.014410798824692731,-0.7147262422713595,0.4813995802077736,217,26,H4a_network
+lead_falsification,CASA,CASA,benchmark,ln(Network),lead +2,-0.001972251179039214,0.029366278860470926,-0.06716040491238413,0.9469882475419321,217,26,H4a_network
+lead_falsification,CASA,CASA,benchmark,ln(Network),joint leads +1=+2=0,,,0.28509080535880765,0.7543579142491234,217,26,"H4a_network; df=(2,25)"
+lead_falsification,SW_delta,Software Flow,supplementary,CI,current X,0.0001337430324787912,0.0003972893343136709,0.33663886977946755,0.7391987147844571,217,26,cost_intensity
+lead_falsification,SW_delta,Software Flow,supplementary,CI,lead +1,-7.145023826304549e-05,0.00034151024608337785,-0.20921843219193284,0.8359731919778244,217,26,cost_intensity
+lead_falsification,SW_delta,Software Flow,supplementary,CI,lead +2,0.0006699274104438963,0.00041643333287801743,1.6087266737606063,0.12023311921649012,217,26,cost_intensity
+lead_falsification,SW_delta,Software Flow,supplementary,CI,joint leads +1=+2=0,,,1.4343950840491724,0.2572015980975625,217,26,"cost_intensity; df=(2,25)"
+lead_falsification,SW_delta,Software Flow,supplementary,NonAssetMinusAsset,current X,-0.0002613975557516227,0.00042143993501808457,-0.6202486618654347,0.5407073226836254,216,26,H4_absolute_contrast
+lead_falsification,SW_delta,Software Flow,supplementary,NonAssetMinusAsset,lead +1,-2.7810337992663445e-05,0.0003742684035961739,-0.07430586639279893,0.9413583845022877,216,26,H4_absolute_contrast
+lead_falsification,SW_delta,Software Flow,supplementary,NonAssetMinusAsset,lead +2,0.0007681348857977643,0.0003924158976079612,1.95745098626244,0.061547280534275106,216,26,H4_absolute_contrast
+lead_falsification,SW_delta,Software Flow,supplementary,NonAssetMinusAsset,joint leads +1=+2=0,,,2.108993105131513,0.14243660420700568,216,26,"H4_absolute_contrast; df=(2,25)"
+lead_falsification,SW_delta,Software Flow,supplementary,AssetCostShare,current X,0.010427284602497837,0.004686599319681725,2.22491488843684,0.03534374089095922,216,26,H4_composition
+lead_falsification,SW_delta,Software Flow,supplementary,AssetCostShare,lead +1,0.0007379298964215741,0.00469123745531493,0.15729962583444537,0.8762722556120834,216,26,H4_composition
+lead_falsification,SW_delta,Software Flow,supplementary,AssetCostShare,lead +2,-0.008411655722563083,0.004367779763768661,-1.9258424594433388,0.06556935042297869,216,26,H4_composition
+lead_falsification,SW_delta,Software Flow,supplementary,AssetCostShare,joint leads +1=+2=0,,,1.8674852538078202,0.17543476594931573,216,26,"H4_composition; df=(2,25)"
+lead_falsification,SW_delta,Software Flow,supplementary,Staff/TA,current X,-0.000325683258421751,0.00014075554083477738,-2.3138219390172834,0.029185174257328868,216,26,H4_staff
+lead_falsification,SW_delta,Software Flow,supplementary,Staff/TA,lead +1,-9.597103998683571e-05,0.00021252726182804333,-0.45157049105768965,0.6554716343287931,216,26,H4_staff
+lead_falsification,SW_delta,Software Flow,supplementary,Staff/TA,lead +2,0.0004546533350219125,0.00026130485540561273,1.7399345079760302,0.09416922601997071,216,26,H4_staff
+lead_falsification,SW_delta,Software Flow,supplementary,Staff/TA,joint leads +1=+2=0,,,1.616285290621233,0.21871059725550085,216,26,"H4_staff; df=(2,25)"
+lead_falsification,SW_delta,Software Flow,supplementary,ln(Network),current X,-0.028353153399068926,0.009862352981788667,-2.8748873064495313,0.008138389235012273,217,26,H4a_network
+lead_falsification,SW_delta,Software Flow,supplementary,ln(Network),lead +1,-0.02269764498724644,0.013210658149814387,-1.7181312792932537,0.0981357239667551,217,26,H4a_network
+lead_falsification,SW_delta,Software Flow,supplementary,ln(Network),lead +2,-0.005059015464622871,0.015253049379713906,-0.3316723980026714,0.7429011328949919,217,26,H4a_network
+lead_falsification,SW_delta,Software Flow,supplementary,ln(Network),joint leads +1=+2=0,,,2.155592137973747,0.13687780605253677,217,26,"H4a_network; df=(2,25)"
+lead_falsification,SW_stock,Software Stock,primary,CI,current X,-0.001523340948042073,0.001189386943825358,-1.2807782664425738,0.21202651037612885,217,26,cost_intensity
+lead_falsification,SW_stock,Software Stock,primary,CI,lead +1,0.00036425634346372933,0.0011150272119773823,0.326679330827953,0.7466297484326581,217,26,cost_intensity
+lead_falsification,SW_stock,Software Stock,primary,CI,lead +2,0.0014101411360511182,0.0009410170178540954,1.4985288356068396,0.14651793052479725,217,26,cost_intensity
+lead_falsification,SW_stock,Software Stock,primary,CI,joint leads +1=+2=0,,,2.044760691576736,0.1505022218632391,217,26,"cost_intensity; df=(2,25)"
+lead_falsification,SW_stock,Software Stock,primary,NonAssetMinusAsset,current X,-0.002065840260776156,0.0013281735074193554,-1.5553993881342274,0.1324207134241393,216,26,H4_absolute_contrast
+lead_falsification,SW_stock,Software Stock,primary,NonAssetMinusAsset,lead +1,0.00023599762013250388,0.0011963405284445147,0.19726625866244676,0.8452142502705663,216,26,H4_absolute_contrast
+lead_falsification,SW_stock,Software Stock,primary,NonAssetMinusAsset,lead +2,0.0015650121831829343,0.000616649805421724,2.537926987770035,0.017759518231690318,216,26,H4_absolute_contrast
+lead_falsification,SW_stock,Software Stock,primary,NonAssetMinusAsset,joint leads +1=+2=0,,,4.6440389231399495,0.019273512156818835,216,26,"H4_absolute_contrast; df=(2,25)"
+lead_falsification,SW_stock,Software Stock,primary,AssetCostShare,current X,0.02764768576795689,0.010462532207442456,2.6425424763127503,0.013994352423360711,216,26,H4_composition
+lead_falsification,SW_stock,Software Stock,primary,AssetCostShare,lead +1,0.0013320900822870428,0.009957743842068326,0.13377428696843782,0.8946521348217953,216,26,H4_composition
+lead_falsification,SW_stock,Software Stock,primary,AssetCostShare,lead +2,-0.015075294835080594,0.007395450036190772,-2.038455369356472,0.05221365919685598,216,26,H4_composition
+lead_falsification,SW_stock,Software Stock,primary,AssetCostShare,joint leads +1=+2=0,,,2.789839329397487,0.08060066796997256,216,26,"H4_composition; df=(2,25)"
+lead_falsification,SW_stock,Software Stock,primary,Staff/TA,current X,-0.000942863265835899,0.0009083636209296327,-1.037979994036924,0.3092151242292338,216,26,H4_staff
+lead_falsification,SW_stock,Software Stock,primary,Staff/TA,lead +1,-0.00045401106147142153,0.000881144899956146,-0.5152513071278259,0.6109037567222253,216,26,H4_staff
+lead_falsification,SW_stock,Software Stock,primary,Staff/TA,lead +2,0.0009140974861826468,0.0010433528073440124,0.8761154230366222,0.3893080668023515,216,26,H4_staff
+lead_falsification,SW_stock,Software Stock,primary,Staff/TA,joint leads +1=+2=0,,,0.3903625375898818,0.6808650058759824,216,26,"H4_staff; df=(2,25)"
+lead_falsification,SW_stock,Software Stock,primary,ln(Network),current X,-0.024521668298307906,0.020420995883032422,-1.2008066814548788,0.2410804623582203,217,26,H4a_network
+lead_falsification,SW_stock,Software Stock,primary,ln(Network),lead +1,-0.02173922799711194,0.051777999878727686,-0.4198545337407523,0.6781781168025265,217,26,H4a_network
+lead_falsification,SW_stock,Software Stock,primary,ln(Network),lead +2,-0.039582382370576166,0.04743009501672976,-0.8345414943110379,0.4118799408469881,217,26,H4a_network
+lead_falsification,SW_stock,Software Stock,primary,ln(Network),joint leads +1=+2=0,,,2.30093368321623,0.12099328089790211,217,26,"H4a_network; df=(2,25)"
+bank_specific_trend,CASA,CASA,benchmark,CI,baseline same sample,0.0016089657612872142,0.00039459608276194995,4.077500592568891,0.0004059302982240646,273,26,cost_intensity
+bank_specific_trend,CASA,CASA,benchmark,CI,with bank-specific trends,0.0009643951494282601,0.0003277992738914152,2.9420295474715417,0.006937483265351253,273,26,cost_intensity; reference=ABB; trend_terms=25
+bank_specific_trend,CASA,CASA,benchmark,CI,coef change % vs baseline,-0.0006445706118589541,,-40.06117640087512,,273,26,cost_intensity
+bank_specific_trend,CASA,CASA,benchmark,NonAssetMinusAsset,baseline same sample,0.0012726969403169092,0.0004650829816464437,2.736494325832834,0.011262826158486889,272,26,H4_absolute_contrast
+bank_specific_trend,CASA,CASA,benchmark,NonAssetMinusAsset,with bank-specific trends,0.0007245753044064461,0.00046746458763197054,1.5500111100969554,0.13370679226633816,272,26,H4_absolute_contrast; reference=ABB; trend_terms=25
+bank_specific_trend,CASA,CASA,benchmark,NonAssetMinusAsset,coef change % vs baseline,-0.0005481216359104631,,-43.06772638063996,,272,26,H4_absolute_contrast
+bank_specific_trend,CASA,CASA,benchmark,AssetCostShare,baseline same sample,-0.007673073269694966,0.009426107737794008,-0.814023506110561,0.4233176399819505,272,26,H4_composition
+bank_specific_trend,CASA,CASA,benchmark,AssetCostShare,with bank-specific trends,-0.0025637458225869396,0.012595794776056749,-0.20353982167606802,0.8403608139227571,272,26,H4_composition; reference=ABB; trend_terms=25
+bank_specific_trend,CASA,CASA,benchmark,AssetCostShare,coef change % vs baseline,0.005109327447108026,,66.58775783215141,,272,26,H4_composition
+bank_specific_trend,CASA,CASA,benchmark,Staff/TA,baseline same sample,0.0005421742535899353,0.000284905099932242,1.9029994679592561,0.06861736231455996,272,26,H4_staff
+bank_specific_trend,CASA,CASA,benchmark,Staff/TA,with bank-specific trends,0.00023164910625136698,0.0003088822004735698,0.7499593887126188,0.4602792350586601,272,26,H4_staff; reference=ABB; trend_terms=25
+bank_specific_trend,CASA,CASA,benchmark,Staff/TA,coef change % vs baseline,-0.0003105251473385683,,-57.27404893951843,,272,26,H4_staff
+bank_specific_trend,CASA,CASA,benchmark,ln(Network),baseline same sample,-0.05145324024103509,0.05684633538870882,-0.9051285344816626,0.3740379984582114,273,26,H4a_network
+bank_specific_trend,CASA,CASA,benchmark,ln(Network),with bank-specific trends,-0.022822206445970893,0.040532855807776894,-0.563054489774986,0.5784131008995049,273,26,H4a_network; reference=ABB; trend_terms=25
+bank_specific_trend,CASA,CASA,benchmark,ln(Network),coef change % vs baseline,0.0286310337950642,,55.64476340253945,,273,26,H4a_network
+bank_specific_trend,SW_delta,Software Flow,supplementary,CI,baseline same sample,0.0003944387155660614,0.0003091650074652828,1.2758194040130957,0.21374646686598534,271,26,cost_intensity
+bank_specific_trend,SW_delta,Software Flow,supplementary,CI,with bank-specific trends,0.0005562954519196402,0.0003211189359875267,1.7323657672472126,0.0955304310348891,271,26,cost_intensity; reference=ABB; trend_terms=25
+bank_specific_trend,SW_delta,Software Flow,supplementary,CI,coef change % vs baseline,0.0001618567363535788,,41.034698158698035,,271,26,cost_intensity
+bank_specific_trend,SW_delta,Software Flow,supplementary,NonAssetMinusAsset,baseline same sample,3.479599814865399e-05,0.00032035279544888746,0.10861774469580278,0.9143727901757578,270,26,H4_absolute_contrast
+bank_specific_trend,SW_delta,Software Flow,supplementary,NonAssetMinusAsset,with bank-specific trends,0.0001866320584679039,0.0004241730667251872,0.4399903556083604,0.6637245951107524,270,26,H4_absolute_contrast; reference=ABB; trend_terms=25
+bank_specific_trend,SW_delta,Software Flow,supplementary,NonAssetMinusAsset,coef change % vs baseline,0.00015183606031924992,,436.360697775021,,270,26,H4_absolute_contrast
+bank_specific_trend,SW_delta,Software Flow,supplementary,AssetCostShare,baseline same sample,0.009538597314767134,0.003266222617273579,2.9203757466872564,0.007305049291709091,270,26,H4_composition
+bank_specific_trend,SW_delta,Software Flow,supplementary,AssetCostShare,with bank-specific trends,0.007795040666567771,0.006141900072751632,1.2691578459816126,0.21607377545109502,270,26,H4_composition; reference=ABB; trend_terms=25
+bank_specific_trend,SW_delta,Software Flow,supplementary,AssetCostShare,coef change % vs baseline,-0.0017435566481993625,,-18.27896273071601,,270,26,H4_composition
+bank_specific_trend,SW_delta,Software Flow,supplementary,Staff/TA,baseline same sample,-0.0002415366243481041,0.00024144711185092747,-1.0003707333522875,0.3267160612192438,270,26,H4_staff
+bank_specific_trend,SW_delta,Software Flow,supplementary,Staff/TA,with bank-specific trends,4.3467107655358365e-05,0.00021638221276701374,0.20088114960798978,0.8424168766158068,270,26,H4_staff; reference=ABB; trend_terms=25
+bank_specific_trend,SW_delta,Software Flow,supplementary,Staff/TA,coef change % vs baseline,0.00028500373200346244,,117.99607317220483,,270,26,H4_staff
+bank_specific_trend,SW_delta,Software Flow,supplementary,ln(Network),baseline same sample,-0.05528023222810943,0.01621841446923186,-3.4084856033851025,0.0022193957800453108,271,26,H4a_network
+bank_specific_trend,SW_delta,Software Flow,supplementary,ln(Network),with bank-specific trends,-0.026801945326465598,0.016337245348318572,-1.640542499976843,0.1134158441330058,271,26,H4a_network; reference=ABB; trend_terms=25
+bank_specific_trend,SW_delta,Software Flow,supplementary,ln(Network),coef change % vs baseline,0.028478286901643834,,51.51622153852479,,271,26,H4a_network
+bank_specific_trend,SW_stock,Software Stock,primary,CI,baseline same sample,-0.0006088349012391585,0.0005222845610728911,-1.1657149121706247,0.2547313392338585,271,26,cost_intensity
+bank_specific_trend,SW_stock,Software Stock,primary,CI,with bank-specific trends,-0.0019633581492117867,0.001771410642043509,-1.108358560467293,0.27825646213666333,271,26,cost_intensity; reference=ABB; trend_terms=25
+bank_specific_trend,SW_stock,Software Stock,primary,CI,coef change % vs baseline,-0.0013545232479726282,,-222.4779238535396,,271,26,cost_intensity
+bank_specific_trend,SW_stock,Software Stock,primary,NonAssetMinusAsset,baseline same sample,-0.0009803346197790178,0.0003705629328994043,-2.6455280135780512,0.013898744552619339,270,26,H4_absolute_contrast
+bank_specific_trend,SW_stock,Software Stock,primary,NonAssetMinusAsset,with bank-specific trends,-0.00236682072102532,0.0009090937005345194,-2.6034947988680393,0.015302777403553795,270,26,H4_absolute_contrast; reference=ABB; trend_terms=25
+bank_specific_trend,SW_stock,Software Stock,primary,NonAssetMinusAsset,coef change % vs baseline,-0.0013864861012463023,,-141.4298825393759,,270,26,H4_absolute_contrast
+bank_specific_trend,SW_stock,Software Stock,primary,AssetCostShare,baseline same sample,0.01801851150259856,0.005887323909294222,3.060560584097136,0.00521807053335539,270,26,H4_composition
+bank_specific_trend,SW_stock,Software Stock,primary,AssetCostShare,with bank-specific trends,0.0322149547504533,0.013237267877881076,2.4336558757931575,0.022431391185158907,270,26,H4_composition; reference=ABB; trend_terms=25
+bank_specific_trend,SW_stock,Software Stock,primary,AssetCostShare,coef change % vs baseline,0.01419644324785474,,78.78810214599237,,270,26,H4_composition
+bank_specific_trend,SW_stock,Software Stock,primary,Staff/TA,baseline same sample,-0.0009416979917110245,0.0002895029358824139,-3.25280981638649,0.00326389024438538,270,26,H4_staff
+bank_specific_trend,SW_stock,Software Stock,primary,Staff/TA,with bank-specific trends,-0.0011256766162860237,0.0010375155420216246,-1.0849732564898402,0.28828576559702,270,26,H4_staff; reference=ABB; trend_terms=25
+bank_specific_trend,SW_stock,Software Stock,primary,Staff/TA,coef change % vs baseline,-0.00018397862457499915,,-19.53690314669971,,270,26,H4_staff
+bank_specific_trend,SW_stock,Software Stock,primary,ln(Network),baseline same sample,-0.07453772732599123,0.024714838173714653,-3.0159099890552983,0.005811530362291956,271,26,H4a_network
+bank_specific_trend,SW_stock,Software Stock,primary,ln(Network),with bank-specific trends,-0.03186288088911876,0.027628730156492268,-1.1532517313913373,0.25971444469066846,271,26,H4a_network; reference=ABB; trend_terms=25
+bank_specific_trend,SW_stock,Software Stock,primary,ln(Network),coef change % vs baseline,0.04267484643687247,,57.25267990830168,,271,26,H4a_network

@@ -1,0 +1,12 @@
+variable,N_private_panel,missing_bank_years,nonmissing_bank_years,banks_total,banks_with_data,banks_all_missing
+CASA,286,12,274,26,26,
+SW_delta,286,12,274,26,26,
+SW_stock,286,12,274,26,26,
+network_count_harmonized,286,2,284,26,26,
+branch_den,286,2,284,26,26,
+CI,286,0,286,26,26,
+lnTA,286,0,286,26,26,
+eq_ratio,286,0,286,26,26,
+loan_ratio,286,0,286,26,26,
+NPL_ratio,286,8,278,26,26,
+dep_depth,286,0,286,26,26,

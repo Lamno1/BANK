@@ -1,0 +1,60 @@
+[NETWORK] sheet="số phòng chi nhánh"; valid bank-years=369; banks=31; years=2014-2025
+[NETWORK MERGE] private panel N=286; matched=284 (99.3%); missing=2
+
+====================================================================================================
+[native] CASA (CASA)
+====================================================================================================
+Baseline CI: beta=+0.001609, p=0.00041, N=273, G=26
+Temporal XxPost: beta=-0.000515, p=0.13352; pre p=0.00027; post p=0.00277
+H4 contrast p=0.01126; AssetShare p=0.42332; Staff p=0.06862
+Network ln count: beta=-0.051453, p=0.37404; intensity p=0.40925
+Scale: BIG p=0.13693; fixed mean p=0.48671; 2015 p=0.22736; continuous p=0.08393
+
+====================================================================================================
+[native] Software net change (SW_delta)
+====================================================================================================
+Baseline CI: beta=+0.000394, p=0.21375, N=271, G=26
+Temporal XxPost: beta=-0.002284, p=0.00686; pre p=0.00562; post p=0.14723
+H4 contrast p=0.91437; AssetShare p=0.00731; Staff p=0.32672
+Network ln count: beta=-0.055280, p=0.00222; intensity p=0.98537
+Scale: BIG p=0.02720; fixed mean p=0.06283; 2015 p=0.01500; continuous p=0.00302
+
+====================================================================================================
+[native] Software stock (SW_stock)
+====================================================================================================
+Baseline CI: beta=-0.000609, p=0.25473, N=271, G=26
+Temporal XxPost: beta=-0.003001, p=0.07786; pre p=0.07574; post p=0.60964
+H4 contrast p=0.01390; AssetShare p=0.00522; Staff p=0.00326
+Network ln count: beta=-0.074538, p=0.00581; intensity p=0.51882
+Scale: BIG p=0.02543; fixed mean p=0.66657; 2015 p=0.20702; continuous p=0.00555
+
+[COMMON SAMPLE] bank-years=268, banks=26, years=2015-2025
+
+====================================================================================================
+[common3] CASA (CASA)
+====================================================================================================
+Baseline CI: beta=+0.001627, p=0.00050, N=268, G=26
+Temporal XxPost: beta=-0.000426, p=0.18948; pre p=0.00044; post p=0.00239
+H4 contrast p=0.01362; AssetShare p=0.41157; Staff p=0.08193
+Network ln count: beta=-0.051058, p=0.38303; intensity p=0.34997
+Scale: BIG p=0.07746; fixed mean p=0.88033; 2015 p=0.81675; continuous p=0.11575
+
+====================================================================================================
+[common3] Software net change (SW_delta)
+====================================================================================================
+Baseline CI: beta=+0.000395, p=0.21425, N=268, G=26
+Temporal XxPost: beta=-0.002330, p=0.00593; pre p=0.00465; post p=0.14864
+H4 contrast p=0.90254; AssetShare p=0.00818; Staff p=0.33188
+Network ln count: beta=-0.055123, p=0.00045; intensity p=0.96735
+Scale: BIG p=0.01715; fixed mean p=0.31612; 2015 p=0.09173; continuous p=0.00308
+
+====================================================================================================
+[common3] Software stock (SW_stock)
+====================================================================================================
+Baseline CI: beta=-0.000630, p=0.25579, N=268, G=26
+Temporal XxPost: beta=-0.003025, p=0.07433; pre p=0.07205; post p=0.60252
+H4 contrast p=0.01570; AssetShare p=0.00601; Staff p=0.00339
+Network ln count: beta=-0.069497, p=0.00206; intensity p=0.40502
+Scale: BIG p=0.08968; fixed mean p=0.38597; 2015 p=0.11564; continuous p=0.00547
+
+Saved D:\BANK\research_project\06_outputs\run_20260920\THREE_VARIABLE_SYMMETRIC_RESULTS.csv

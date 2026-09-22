@@ -1,0 +1,13 @@
+{
+  "seed": 20260920,
+  "wild_bootstrap_replications": 999,
+  "specifications": [
+    "PRIMARY_stock_CI_without_network",
+    "PRIMARY_stock_AssetCostShare_without_network",
+    "SECONDARY_delta_CI_without_network",
+    "SECONDARY_stock_CI_with_network",
+    "SECONDARY_stock_AssetCostShare_with_network",
+    "SECONDARY_delta_AssetCostShare_without_network"
+  ],
+  "note": "Same locked RHS/LHS/sample rules; inference comparison only."
+}
